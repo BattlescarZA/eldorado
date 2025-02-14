@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animate-background-carousel {
+    animation: backgroundCarousel 30s infinite;
+    background-image: url('/src/assets/images/IMG_4337_edited.jpg');
+  }
+
+  @keyframes backgroundCarousel {
+    0% {
+      background-image: url('/src/assets/images/IMG_4337_edited.jpg');
+      opacity: 1;
+    }
+    20% {
+      background-image: url('/src/assets/images/IMG_4337_edited.jpg');
+      opacity: 1;
+    }
+    25% {
+      background-image: url('/src/assets/images/IMG_4338_edited.jpg');
+      opacity: 1;
+    }
+    45% {
+      background-image: url('/src/assets/images/IMG_4338_edited.jpg');
+      opacity: 1;
+    }
+    50% {
+      background-image: url('/src/assets/images/IMG_4339_edited.jpg');
+      opacity: 1;
+    }
+    70% {
+      background-image: url('/src/assets/images/IMG_4339_edited.jpg');
+      opacity: 1;
+    }
+    75% {
+      background-image: url('/src/assets/images/IMG_4340_edited.jpg');
+      opacity: 1;
+    }
+    95% {
+      background-image: url('/src/assets/images/IMG_4340_edited.jpg');
+      opacity: 1;
+    }
+    100% {
+      background-image: url('/src/assets/images/IMG_4341_edited.jpg');
+      opacity: 1;
+    }
+  }
+
+  @keyframes pop-in {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-pop-in {
+    animation: pop-in 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out 0.5s forwards;
+    opacity: 0;
+  }
+}
